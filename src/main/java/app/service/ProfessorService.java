@@ -2,13 +2,21 @@ package app.service;
 
 import app.entity.Professor;
 import app.repository.ProfessorRepository;
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Service
 public class ProfessorService {
 
